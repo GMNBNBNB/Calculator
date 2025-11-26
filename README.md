@@ -1,6 +1,6 @@
 # ConnectRPC 计算器
 
-基于 Go (ConnectRPC) 后端和 Next.js 前端的简单计算器示例。
+基于 Go (ConnectRPC) 后端和 Next.js 前端的计算器示例。
 
 ## 前置要求
 

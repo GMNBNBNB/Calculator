@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.10
 // 	protoc        (unknown)
-// source: calculator.proto
+// source: proto/calculator/v1/calculator.proto
 
 package calculatorv1
 
@@ -60,11 +60,11 @@ func (x Operation) String() string {
 }
 
 func (Operation) Descriptor() protoreflect.EnumDescriptor {
-	return file_calculator_proto_enumTypes[0].Descriptor()
+	return file_proto_calculator_v1_calculator_proto_enumTypes[0].Descriptor()
 }
 
 func (Operation) Type() protoreflect.EnumType {
-	return &file_calculator_proto_enumTypes[0]
+	return &file_proto_calculator_v1_calculator_proto_enumTypes[0]
 }
 
 func (x Operation) Number() protoreflect.EnumNumber {
@@ -73,7 +73,7 @@ func (x Operation) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Operation.Descriptor instead.
 func (Operation) EnumDescriptor() ([]byte, []int) {
-	return file_calculator_proto_rawDescGZIP(), []int{0}
+	return file_proto_calculator_v1_calculator_proto_rawDescGZIP(), []int{0}
 }
 
 type CalculateRequest struct {
@@ -87,7 +87,7 @@ type CalculateRequest struct {
 
 func (x *CalculateRequest) Reset() {
 	*x = CalculateRequest{}
-	mi := &file_calculator_proto_msgTypes[0]
+	mi := &file_proto_calculator_v1_calculator_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -99,7 +99,7 @@ func (x *CalculateRequest) String() string {
 func (*CalculateRequest) ProtoMessage() {}
 
 func (x *CalculateRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_calculator_proto_msgTypes[0]
+	mi := &file_proto_calculator_v1_calculator_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -112,7 +112,7 @@ func (x *CalculateRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CalculateRequest.ProtoReflect.Descriptor instead.
 func (*CalculateRequest) Descriptor() ([]byte, []int) {
-	return file_calculator_proto_rawDescGZIP(), []int{0}
+	return file_proto_calculator_v1_calculator_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *CalculateRequest) GetA() float64 {
@@ -145,7 +145,7 @@ type CalculateResponse struct {
 
 func (x *CalculateResponse) Reset() {
 	*x = CalculateResponse{}
-	mi := &file_calculator_proto_msgTypes[1]
+	mi := &file_proto_calculator_v1_calculator_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -157,7 +157,7 @@ func (x *CalculateResponse) String() string {
 func (*CalculateResponse) ProtoMessage() {}
 
 func (x *CalculateResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_calculator_proto_msgTypes[1]
+	mi := &file_proto_calculator_v1_calculator_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -170,7 +170,7 @@ func (x *CalculateResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CalculateResponse.ProtoReflect.Descriptor instead.
 func (*CalculateResponse) Descriptor() ([]byte, []int) {
-	return file_calculator_proto_rawDescGZIP(), []int{1}
+	return file_proto_calculator_v1_calculator_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *CalculateResponse) GetResult() float64 {
@@ -180,11 +180,11 @@ func (x *CalculateResponse) GetResult() float64 {
 	return 0
 }
 
-var File_calculator_proto protoreflect.FileDescriptor
+var File_proto_calculator_v1_calculator_proto protoreflect.FileDescriptor
 
-const file_calculator_proto_rawDesc = "" +
+const file_proto_calculator_v1_calculator_proto_rawDesc = "" +
 	"\n" +
-	"\x10calculator.proto\x12\rcalculator.v1\"X\n" +
+	"$proto/calculator/v1/calculator.proto\x12\rcalculator.v1\"X\n" +
 	"\x10CalculateRequest\x12\f\n" +
 	"\x01a\x18\x01 \x01(\x01R\x01a\x12\f\n" +
 	"\x01b\x18\x02 \x01(\x01R\x01b\x12(\n" +
@@ -198,28 +198,28 @@ const file_calculator_proto_rawDesc = "" +
 	"\x12OPERATION_MULTIPLY\x10\x03\x12\x14\n" +
 	"\x10OPERATION_DIVIDE\x10\x042c\n" +
 	"\x11CalculatorService\x12N\n" +
-	"\tCalculate\x12\x1f.calculator.v1.CalculateRequest\x1a .calculator.v1.CalculateResponseB(Z&example/gen/calculator/v1;calculatorv1b\x06proto3"
+	"\tCalculate\x12\x1f.calculator.v1.CalculateRequest\x1a .calculator.v1.CalculateResponseB.Z,example/gen/proto/calculator/v1;calculatorv1b\x06proto3"
 
 var (
-	file_calculator_proto_rawDescOnce sync.Once
-	file_calculator_proto_rawDescData []byte
+	file_proto_calculator_v1_calculator_proto_rawDescOnce sync.Once
+	file_proto_calculator_v1_calculator_proto_rawDescData []byte
 )
 
-func file_calculator_proto_rawDescGZIP() []byte {
-	file_calculator_proto_rawDescOnce.Do(func() {
-		file_calculator_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_calculator_proto_rawDesc), len(file_calculator_proto_rawDesc)))
+func file_proto_calculator_v1_calculator_proto_rawDescGZIP() []byte {
+	file_proto_calculator_v1_calculator_proto_rawDescOnce.Do(func() {
+		file_proto_calculator_v1_calculator_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_calculator_v1_calculator_proto_rawDesc), len(file_proto_calculator_v1_calculator_proto_rawDesc)))
 	})
-	return file_calculator_proto_rawDescData
+	return file_proto_calculator_v1_calculator_proto_rawDescData
 }
 
-var file_calculator_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_calculator_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file_calculator_proto_goTypes = []any{
+var file_proto_calculator_v1_calculator_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_proto_calculator_v1_calculator_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_proto_calculator_v1_calculator_proto_goTypes = []any{
 	(Operation)(0),            // 0: calculator.v1.Operation
 	(*CalculateRequest)(nil),  // 1: calculator.v1.CalculateRequest
 	(*CalculateResponse)(nil), // 2: calculator.v1.CalculateResponse
 }
-var file_calculator_proto_depIdxs = []int32{
+var file_proto_calculator_v1_calculator_proto_depIdxs = []int32{
 	0, // 0: calculator.v1.CalculateRequest.op:type_name -> calculator.v1.Operation
 	1, // 1: calculator.v1.CalculatorService.Calculate:input_type -> calculator.v1.CalculateRequest
 	2, // 2: calculator.v1.CalculatorService.Calculate:output_type -> calculator.v1.CalculateResponse
@@ -230,27 +230,27 @@ var file_calculator_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_calculator_proto_init() }
-func file_calculator_proto_init() {
-	if File_calculator_proto != nil {
+func init() { file_proto_calculator_v1_calculator_proto_init() }
+func file_proto_calculator_v1_calculator_proto_init() {
+	if File_proto_calculator_v1_calculator_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_calculator_proto_rawDesc), len(file_calculator_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_calculator_v1_calculator_proto_rawDesc), len(file_proto_calculator_v1_calculator_proto_rawDesc)),
 			NumEnums:      1,
 			NumMessages:   2,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_calculator_proto_goTypes,
-		DependencyIndexes: file_calculator_proto_depIdxs,
-		EnumInfos:         file_calculator_proto_enumTypes,
-		MessageInfos:      file_calculator_proto_msgTypes,
+		GoTypes:           file_proto_calculator_v1_calculator_proto_goTypes,
+		DependencyIndexes: file_proto_calculator_v1_calculator_proto_depIdxs,
+		EnumInfos:         file_proto_calculator_v1_calculator_proto_enumTypes,
+		MessageInfos:      file_proto_calculator_v1_calculator_proto_msgTypes,
 	}.Build()
-	File_calculator_proto = out.File
-	file_calculator_proto_goTypes = nil
-	file_calculator_proto_depIdxs = nil
+	File_proto_calculator_v1_calculator_proto = out.File
+	file_proto_calculator_v1_calculator_proto_goTypes = nil
+	file_proto_calculator_v1_calculator_proto_depIdxs = nil
 }

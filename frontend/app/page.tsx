@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { client } from "../lib/client";
-import { Operation } from "../gen/calculator/v1/calculator_pb";
+import { Operation } from "../gen/proto/calculator/v1/calculator_pb";
 
 export default function Home() {
   const [a, setA] = useState<string>("");

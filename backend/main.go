@@ -11,8 +11,8 @@ import (
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 
-	calculatorv1 "example/gen/calculator/v1"
-	"example/gen/calculator/v1/calculatorv1connect"
+	calculatorv1 "example/gen/proto/calculator/v1"
+	"example/gen/proto/calculator/v1/calculatorv1connect"
 )
 
 type CalculatorServer struct{}
